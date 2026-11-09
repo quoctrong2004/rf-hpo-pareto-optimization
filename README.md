@@ -147,7 +147,7 @@ AI được dùng để hỗ trợ tạo khung mã, giải thích thuật toán 
 
 ## 9. Đưa dự án lên GitHub
 
-Repository hiện được đóng gói ở dạng local ZIP; chưa được xuất bản lên tài khoản GitHub cá nhân. Để đáp ứng yêu cầu public của học phần: tạo repository public tên `rf-hpo-pareto-optimization`, giải nén bộ dự án vào repository, commit theo các checkpoint thực tế của 5 tuần, rồi bổ sung URL GitHub vào báo cáo và README. Không ghi URL giả khi repository chưa được tạo.
+Repository đồ án đã được xuất bản công khai trên GitHub tại: https://github.com/quoctrong2004/rf-hpo-pareto-optimization. Để đáp ứng yêu cầu public của học phần: tạo repository public tên `rf-hpo-pareto-optimization`, giải nén bộ dự án vào repository, commit theo các checkpoint thực tế của 5 tuần, rồi bổ sung URL GitHub vào báo cáo và README. Không ghi URL giả khi repository chưa được tạo.
 
 ## 10. Tài liệu môn học sử dụng
 
