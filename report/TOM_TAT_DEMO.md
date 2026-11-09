@@ -23,28 +23,3 @@ Nếu ưu tiên accuracy, chọn best HPO. Nếu thiết bị cần mô hình g�
 
 ## 6. Hạn chế (30 giây)
 Chỉ dùng một dataset benchmark, NSGA-II mới chạy 20 trial, latency đo trên một môi trường phần cứng và search space đơn mục tiêu có 24 cấu hình nhỏ. Đây là đồ án nhập môn, chưa phải hệ thống chẩn đoán y khoa hoặc benchmark triển khai thực tế.
-
----
-
-## Câu hỏi giảng viên có thể hỏi
-
-**1. Parameter và hyperparameter khác nhau thế nào?**  
-Parameter là trọng số mô hình học từ dữ liệu; hyperparameter là lựa chọn bên ngoài như số cây, độ sâu cây và số mẫu tối thiểu để tách node.
-
-**2. Vì sao không dùng test set trong objective?**  
-Nếu dùng test để chọn tham số, mô hình sẽ gián tiếp thích nghi với test và kết quả cuối không còn khách quan. Vì vậy tuning dùng CV trên development set, test chỉ đánh giá cuối.
-
-**3. Study và Trial trong Optuna khác nhau thế nào?**  
-Study là toàn bộ chiến dịch tối ưu; Trial là một lần thử một cấu hình hyperparameter.
-
-**4. Dominance là gì?**  
-Một nghiệm dominate nghiệm khác khi nó không kém ở bất kỳ mục tiêu nào và tốt hơn ở ít nhất một mục tiêu.
-
-**5. Vì sao best accuracy chưa chắc là mô hình cuối?**  
-Vì mô hình có accuracy cao hơn có thể chậm hơn, lớn hơn hoặc tiêu tốn tài nguyên hơn. Cần nhìn các trade-off và bối cảnh triển khai.
-
-**6. Tại sao Grid và Random cho kết quả bằng nhau?**  
-Miền Grid chỉ có đúng 24 cấu hình và Random cũng lấy đủ 24 cấu hình, nên Random đã lấy hết tập cấu hình đó, chỉ khác thứ tự.
-
-**7. Vì sao không dùng pruning?**  
-Mỗi trial Random Forest trong thí nghiệm này chỉ có một kết quả CV cuối, không có metric trung gian theo epoch để pruner so sánh và dừng sớm có cơ sở.
