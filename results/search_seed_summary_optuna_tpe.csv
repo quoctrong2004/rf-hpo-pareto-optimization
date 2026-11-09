@@ -1,0 +1,4 @@
+method,seed,best_cv_accuracy,best_cv_std,best_trial,best_params,evaluation_budget,search_time_sec,sum_fit_evaluation_sec
+Optuna TPE,17,0.9626373626373624,0.0098288702307682,2,"{""max_depth"": 10, ""max_features"": ""log2"", ""min_samples_split"": 5, ""n_estimators"": 40}",24,7.192578407000042,7.145551411999918
+Optuna TPE,42,0.9626373626373624,0.0183881324512983,2,"{""max_depth"": null, ""max_features"": ""log2"", ""min_samples_split"": 5, ""n_estimators"": 60}",24,7.621694423999997,7.574688510000158
+Optuna TPE,73,0.9670329670329668,0.0155408083777263,7,"{""max_depth"": 10, ""max_features"": ""log2"", ""min_samples_split"": 2, ""n_estimators"": 60}",24,7.270348097999999,7.226771875000168

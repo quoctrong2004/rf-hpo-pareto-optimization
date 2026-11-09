@@ -1,0 +1,2 @@
+method,best_cv_accuracy_mean,best_cv_accuracy_std,search_time_mean_sec,search_time_std_sec,evaluations_per_seed,total_evaluations
+Random Search,0.9648351648351646,0.0021978021978021,6.317629091999986,0.0486649133430162,24.0,72

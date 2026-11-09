@@ -1,0 +1,2 @@
+method,best_cv_accuracy_mean,best_cv_accuracy_std,search_time_mean_sec,search_time_std_sec,evaluations_per_seed,total_evaluations
+Grid Search,0.9648351648351646,0.0021978021978021,6.106413902999994,0.1142352151850094,24.0,72
